@@ -1,0 +1,107 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+    --QuestFontS: 50px;
+}
+
+#begin{
+text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#head{
+    font-size: var(--QuestFontS);
+}
+button {
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    visibility: visible;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 45%;
+  }
+  section{
+    width: 40%;
+    font-size: 30px;
+  }
+  #timer{
+    text-align: right;
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  #quest1{
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  #quest2{
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  #quest3{
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  #quest4{
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  #quest5{
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  section li {
+    padding: 5px;
+    list-style-type: none;
+    text-align: left;
+  }
+  #viewHS{
+    border: none;
+    flex-wrap: wrap;
+    background:none;
+    color: blueviolet;
+    margin: 0px;
+    width: auto;
+    font-size: large;
+  }

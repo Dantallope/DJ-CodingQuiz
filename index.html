@@ -10,42 +10,92 @@
 </head>
 
 <body>
-    <div id="timer">60</div>
-    <button id="start">Start</button>
+
+    <div id="timer">60 Seconds Left</div>
+    <button id="viewHS">View High Scores</button>
+    <div id="begin">
+        <h1 id="head">Coding Quiz Challenge</h1>
+        <button id="start">Start</button>
+    </div>
     <section hidden id="quest1">
         <h1>What does html stand for?</h1>
-        <button id="q1.1">huge timed missle launcher</button>
-        <button id="q1.2">HyperText Markup Languge</button>
-        <button id="q1.3">Hurting Tiny Mini Lepricans</button>
-        <button id="q1.4">HTML</button>
+        <li>
+            <button id="q1.1">1. huge timed missle launcher</button>
+        </li>
+        <li>
+            <button id="q1.2">2. HyperText Markup Languge</button>
+        </li>
+        <li>
+            <button id="q1.3">3. Hurting Tiny Mini Lepricans</button>
+        </li>
+        <li>
+            <button id="q1.4">4. HTML</button>
+        </li>
+        <h2 id="response"></h2>
     </section>
     <section hidden id="quest2">
         <h1>What is a function?</h1>
-        <button id="q2.1">Something a robot does</button>
-        <button id="q2.2">Zero or more characters written inside quotes</button>
-        <button id="q2.3">A special variable that can hold more than one value</button>
-        <button id="q2.4">A block of code designed to perform a particular task</button>
+        <li>
+            <button id="q2.1">Something a robot does</button>
+        </li>
+        <li>
+            <button id="q2.2">Zero or more characters written inside quotes</button>
+        </li>
+        <li>
+            <button id="q2.3">A special variable that can hold more than one value</button>
+        </li>
+        <li>
+            <button id="q2.4">A block of code designed to perform a particular task</button>
+        </li>
+        <h2 id="response2"></h2>
     </section>
     <section hidden id="quest3">
         <h1>What is the 'this' keyword?</h1>
-        <button id="q3.1">'this' referns to the object of the method it coincides</button>
-        <button id="q3.2">It simply creates a varible named this</button>
-        <button id="q3.3">It calls whatever var follows 'this'</button>
-        <button id="q3.4">None of these</button>
+        <li>
+            <button id="q3.1">'this' referns to the object of the method it coincides</button>
+        </li>
+        <li>
+            <button id="q3.2">It simply creates a varible named this</button>
+        </li>
+        <li>
+            <button id="q3.3">It calls whatever var follows 'this'</button>
+        </li>
+        <li>
+            <button id="q3.4">None of these</button>
+        </li>
+        <h2 id="response3"></h2>
     </section>
     <section hidden id="quest4">
         <h1>What does API stand for?</h1>
-        <button id="q4.1">Are Plums In</button>
-        <button id="q4.2">Antique Pumpkins Intresting</button>
-        <button id="q4.3">Application Programming Interface</button>
-        <button id="q4.4">Always Play Inside</button>
+        <li>
+            <button id="q4.1">Are Plums In</button>
+        </li>
+        <li>
+            <button id="q4.2">Antique Pumpkins Intresting</button>
+        </li>
+        <li>
+            <button id="q4.3">Application Programming Interface</button>
+        </li>
+        <li>
+            <button id="q4.4">Always Play Inside</button>
+        </li>
+        <h2 id="response4"></h2>
     </section>
     <section hidden id="quest5">
         <h1>What two values dose a boolean represent?</h1>
-        <button id="q5.1">Yes/No/Maybe</button>
-        <button id="q5.2">True/False</button>
-        <button id="q5.3">1/2</button>
-        <button id="q5.4">A boolean can have more than two values</button>
+        <li>
+            <button id="q5.1">Yes/No/Maybe</button>
+        </li>
+        <li>
+            <button id="q5.2">True/False</button>
+        </li>
+        <li>
+            <button id="q5.3">1/2</button>
+        </li>
+        <li>
+            <button id="q5.4">A boolean can have more than two values</button>
+        </li>
+        <h2 id="response5"></h2>
     </section>
     <section hidden id="newScore">
         <h1>Congrats</h1>
@@ -56,7 +106,9 @@
         </form>
     </section>
     <section hidden id="highscores">
+        <h1 id="hslist"></h1>
 
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
