@@ -105,3 +105,26 @@ button {
     width: auto;
     font-size: large;
   }
+  #highscores{
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  #hslist{
+    background-color: lightgray;
+  }
+  #newScore{
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }

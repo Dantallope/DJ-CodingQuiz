@@ -7,6 +7,8 @@ var score = document.getElementById("score");
 var viewHS = document.getElementById("viewHS");
 var hsForm = $("#hsForm");
 var hslist = $("#hslist");
+var backB = document.getElementById("back");
+var clearB = document.getElementById("clear");
 var response = document.getElementById("response");
 var response2 = document.getElementById("response2");
 var response3 = document.getElementById("response3");
@@ -175,28 +177,25 @@ function inputingScore(event) {
     var scoreItem = $('input[name="inital"]').val();
     localStorage.setItem(scoreItem, timeLeft);
 
-    //hslist.append('<li>' + localStorage.key + "-" + localStorage.getItem(scoreItem) + '</li>');
 
     highScores();
 }
-for(i=0; i <= localStorage.length; i++){
-    const key = localStorage.key(i);
-    const value = localStorage.getItem(key);
 
-    var newNumberListItem = document.createElement("li");
-
-    var numberListValue = document.createTextNode(i);
-
-    newNumberListItem.append(key, value);
-
-    hslist.append(newNumberListItem);
-
-    //hslist.append(key, value);
-}
 
 function highScores() {
     nspage.hidden = true
     hspage.hidden = false;
+
+    for(i=0; i < localStorage.length; i++){
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+    
+        var newNumberListItem = document.createElement("li");
+    
+        newNumberListItem.append(key,"-", value);
+    
+        hslist.append(newNumberListItem);
+    }
 }
 function timer() {
 
@@ -290,5 +289,12 @@ viewHS.addEventListener("click", function () {
     quest5.hidden = true;
     startEl.hidden = true;
     highScores();
-
-})
+});
+backB.addEventListener("click",function(){
+    hspage.hidden = true;
+    startEl.hidden = false;
+});
+clearB.addEventListener("click",function(){
+    localStorage.clear();
+    
+});
