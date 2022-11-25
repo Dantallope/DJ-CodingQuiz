@@ -5,6 +5,7 @@ var hspage = document.getElementById("highscores");
 var initials = document.getElementById("inital");
 var score = document.getElementById("score");
 var viewHS = document.getElementById("viewHS");
+var loserpage = document.getElementById("loser");
 var hsForm = $("#hsForm");
 var hslist = $("#hslist");
 var backB = document.getElementById("back");
@@ -206,8 +207,9 @@ function timer() {
 
         } else if (timeLeft <= 0) {
             timerEl.textContent = timeLeft;
+            loser();
             clearInterval(timeInterval);
-        } else if (gameOver == true) {
+        }else if (gameOver == true) {
             clearInterval(timeInterval);
         }
     }, 1000);
@@ -270,6 +272,24 @@ function toNS() {
             quicktimer--;
         } else {
             newScore();
+            clearInterval(responsetimer);
+        }
+    }, 1000)
+}
+function loser(){
+    let quicktimer = 1.5;
+
+    var responsetimer = setInterval(function () {
+        if (quicktimer > 0) {
+            quicktimer--;
+        } else {
+            quest1.hidden = true;
+    quest2.hidden = true;
+    quest3.hidden = true;
+    quest4.hidden = true;
+    quest5.hidden = true;
+    startEl.hidden = true;
+    loserpage.hidden = false;
             clearInterval(responsetimer);
         }
     }, 1000)
