@@ -10,6 +10,7 @@ var hsForm = $("#hsForm");
 var hslist = $("#hslist");
 var backB = document.getElementById("back");
 var clearB = document.getElementById("clear");
+var tryEl = document.getElementById("tryAgain");
 var response = document.getElementById("response");
 var response2 = document.getElementById("response2");
 var response3 = document.getElementById("response3");
@@ -317,4 +318,7 @@ backB.addEventListener("click",function(){
 clearB.addEventListener("click",function(){
     localStorage.clear();
     
+});
+tryEl.addEventListener("click", function(){
+window.location.reload();
 });
