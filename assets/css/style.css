@@ -91,6 +91,9 @@ button {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+  .resp{
+    position: absolute;
+  }
   section li {
     padding: 5px;
     list-style-type: none;
@@ -127,4 +130,7 @@ button {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+  #loser{
+    text-align: center;
   }
